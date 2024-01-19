@@ -73,6 +73,36 @@ https://bevyengine.org/learn/book/getting-started/setup/
 
 ## Detailed Walk-Through
 
+As this is mostly a summary of upstream guides, there's not much to add.
+
+---
+
+```sh
+install this && install that
+```
+
+Bevy does not come with an all-in-one editor that would be more familiar to
+people with a background in Unity or Unreal. Functinoality needed to develop a
+game is split between a few pieces of software, without a central piece to put
+them together. While the missing central piece is unfortunate and a hurdle to
+getting started, the split means the separate pieces of software are more
+focused on doing well in their respective responsibilities.
+
+```sh
+cargo install toml-cli --git https://github.com/devnev/toml-cli --branch main
+```
+
+`toml-cli` is a utility for automating changes to TOML files. However, the
+upstream is unmaintained and lacking critical features, so a fork is used here
+with 
+
+```sh
+curl --proto '=https' --tlsv1.2 ...
+```
+
+Disabling all insecure protocols and encryption protects against downgrade
+attacks.
+
 ---
 
 This work is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0)
